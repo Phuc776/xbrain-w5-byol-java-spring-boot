@@ -3,7 +3,12 @@ version = 0.1
 [default.deploy.parameters]
 stack_name = "byol-java-spring-boot"
 region = "us-west-2"
-confirm_changeset = false
+confirm_changeset = true
 capabilities = "CAPABILITY_IAM"
 resolve_s3 = true
 disable_rollback = false
+s3_prefix = "byol-java-spring-boot"
+image_repositories = []
+
+[default.global.parameters]
+region = "us-west-2"
